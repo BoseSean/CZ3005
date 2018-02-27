@@ -1,5 +1,6 @@
 :- debug.
 :-['doctor_core.pl'].
+:-['human_print.pl'].
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
 :- use_module(library(http/html_write)).
@@ -19,13 +20,19 @@ server(Port) :-
         http_server(http_dispatch, [port(Port)]).
 
 replay_question_page:-
+    gesture(Gesture),
+    human_gesture(Gesture, Human_gesture),
+    opening(OP),
+    question_start(QS),
     nextQuestion(Question),
+    human_symptom(Question, Human_question),
     reply_html_page(
        [title('Professional Talking Box Doctor')],
        [center([style='font-size: 36pt', title='tooltip text'],'Professional Talking Box Doctor'),
        center([
             img([src='img/doctor.jpg', width=128], []),br([]),
-            'Are you ', Question,
+            '<   ',Human_gesture,'   >',br([]),
+            OP,QS, Human_question,'?',
             br([]),
             form([action='/', method='post'],
                 [
@@ -40,15 +47,20 @@ replay_question_page:-
         ).
 
 replay_diagnos_page:-
+    gesture(Gesture),
+    human_gesture(Gesture, Human_gesture),
+    opening(OP),
     diagnos(Result),
-    atomic_list_concat(Result, ',', ResultString),
+    human_diagnos(Result, Human_result),
     reply_html_page(
        [title('Professional Talking Box Doctor')],
        [center([style='font-size: 36pt', title='tooltip text'],'Professional Talking Box Doctor'),
        center([
             img([src='img/doctor.jpg', width=128], []),br([]),
-            'You might have ', ResultString,'.'
-        ])]
+            '<   ',Human_gesture,'   >',br([]),
+            OP,'You might have ', Human_result,'.'
+        ]),
+       'To start over, please restart the server.']
         ).
 
 index(Request):-
