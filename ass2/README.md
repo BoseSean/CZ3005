@@ -29,9 +29,9 @@ See more in `CLI_log.txt`.
 
 ## Structure
 
-- doctor\_core.pl: the core knowledge and logic, including implementation of nextQuestion/1, answer/2, and diagnose/1, sets of pains, moods, and illnesses. 
-- human\_print.pl: humanize strings for output.
-- server.pl: web server program, front-end
-- CLI.pl: CLI program, front-end
-- util.pl: utility functions used by different part, including list\_empty/2
-- CLI_log.txt: sample usage in CLI
+- `doctor_core.pl`: the core knowledge and logic, including implementation of `nextQuestion/1`, `answer/2`, and `diagnose/1`, sets of pains, moods, and illnesses. 
+- `human_print.pl`: humanize strings for output.
+- `server.pl`: web server program, front-end
+- `CLI.pl: CLI` program, front-end
+- `util.pl`: utility functions used by different part, including `list_empty/2`
+- `CLI_log.txt`: sample usage in CLI
