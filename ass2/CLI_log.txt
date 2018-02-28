@@ -1,0 +1,69 @@
+-> % swipl CLI.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+%% invoke the program============================================================
+%% ask for pain level============================================================
+?- start.
+<   broad smile   >
+I will help you, but do you feel like manageable pain ?
+(response with response(manageable_pain,yes). or response(manageable_pain,no). )
+true.
+
+?- response(manageable_pain,no).
+<   broad smile   >
+My friend, are you feeling unbearable pain ?
+(response with response(unbearable_pain,yes). or response(unbearable_pain,no). )
+true.
+
+%% ask for mood level============================================================
+
+?- response(manageable_pain,yes).
+<   joke   >
+No worries, but do you feel like angry ?
+(response with response(angry,yes). or response(angry,no). )
+true.
+
+?- response(angry,no).
+<   beaming voice   >
+My friend, do you feel like weepy ?
+(response with response(weepy,yes). or response(weepy,no). )
+true.
+
+?- response(weepy,yes).
+<   look composed   >
+I will help you, but do you feel like chill ?
+(response with response(chill,yes). or response(chill,no). )
+true.
+
+%% ask for symptom================================================================
+
+?- response(chill,no).
+<   greet   >
+I will help you, but are you feeling blood ?
+(response with response(blood,yes). or response(blood,no). )
+true.
+
+?- response(blood,no).
+<   look composed   >
+Well, are you feeling sweat ?
+(response with response(sweat,yes). or response(sweat,no). )
+true.
+
+%% .......
+
+?- response(cough,no).
+<   look composed   >
+My friend, do you feel like ache ?
+(response with response(ache,yes). or response(ache,no). )
+true.
+
+%% giving diagnose result=========================================================
+
+?- response(ache,yes).
+<   greet   >
+I will help you, but you might have fever.
+true.
