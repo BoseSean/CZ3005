@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+
+<SEARCH>
+	<GRAPH>
+		<DESCRIPTION>
+			<SHORT></SHORT>
+			<DETAILED></DETAILED>
+		</DESCRIPTION>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>Node 0</NAME>
+			<INDEX>0</INDEX>
+			<XPOS>7915.8525</XPOS>
+			<YPOS>5039.8965</YPOS>
+			<TYPE>START</TYPE>
+			<HEURISTICVALUE>0.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>Node 1</NAME>
+			<INDEX>1</INDEX>
+			<XPOS>7865.0723</XPOS>
+			<YPOS>5102.2163</YPOS>
+			<TYPE>REGULAR</TYPE>
+			<HEURISTICVALUE>0.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>Node 2</NAME>
+			<INDEX>2</INDEX>
+			<XPOS>7968.94</XPOS>
+			<YPOS>5100.6777</YPOS>
+			<TYPE>GOAL</TYPE>
+			<HEURISTICVALUE>0.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>Node 3</NAME>
+			<INDEX>3</INDEX>
+			<XPOS>7841.99</XPOS>
+			<YPOS>5166.8457</YPOS>
+			<TYPE>REGULAR</TYPE>
+			<HEURISTICVALUE>0.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>Node 4</NAME>
+			<INDEX>4</INDEX>
+			<XPOS>7819.6787</XPOS>
+			<YPOS>5230.7056</YPOS>
+			<TYPE>REGULAR</TYPE>
+			<HEURISTICVALUE>0.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>Node 5</NAME>
+			<INDEX>5</INDEX>
+			<XPOS>7805.06</XPOS>
+			<YPOS>5296.1035</YPOS>
+			<TYPE>REGULAR</TYPE>
+			<HEURISTICVALUE>0.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Edge Definitions -->
+
+		<EDGE>
+			<STARTINDEX>0</STARTINDEX>
+			<ENDINDEX>1</ENDINDEX>
+			<COST>1.0</COST>
+		</EDGE>
+		<EDGE>
+			<STARTINDEX>1</STARTINDEX>
+			<ENDINDEX>3</ENDINDEX>
+			<COST>1.0</COST>
+		</EDGE>
+		<EDGE>
+			<STARTINDEX>3</STARTINDEX>
+			<ENDINDEX>4</ENDINDEX>
+			<COST>1.0</COST>
+		</EDGE>
+		<EDGE>
+			<STARTINDEX>4</STARTINDEX>
+			<ENDINDEX>5</ENDINDEX>
+			<COST>1.0</COST>
+		</EDGE>
+		<EDGE>
+			<STARTINDEX>0</STARTINDEX>
+			<ENDINDEX>2</ENDINDEX>
+			<COST>1.0</COST>
+		</EDGE>
+
+		<!-- Heuristic Settings -->
+
+		<HEURISTIC value="MANUAL"></HEURISTIC>
+		<EDGECOSTS value="MANUAL"></EDGECOSTS>
+
+	</GRAPH>
+</SEARCH>

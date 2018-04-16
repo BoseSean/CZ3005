@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+
+<SEARCH>
+	<GRAPH>
+		<DESCRIPTION>
+			<SHORT></SHORT>
+			<DETAILED></DETAILED>
+		</DESCRIPTION>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>Node 0</NAME>
+			<INDEX>0</INDEX>
+			<XPOS>7947.533</XPOS>
+			<YPOS>5046.935</YPOS>
+			<TYPE>START</TYPE>
+			<HEURISTICVALUE>6.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>Node 1</NAME>
+			<INDEX>1</INDEX>
+			<XPOS>7947.533</XPOS>
+			<YPOS>5094.2383</YPOS>
+			<TYPE>REGULAR</TYPE>
+			<HEURISTICVALUE>4.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>Node 2</NAME>
+			<INDEX>2</INDEX>
+			<XPOS>7949.1367</XPOS>
+			<YPOS>5153.569</YPOS>
+			<TYPE>REGULAR</TYPE>
+			<HEURISTICVALUE>3.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>Node 3</NAME>
+			<INDEX>3</INDEX>
+			<XPOS>7950.74</XPOS>
+			<YPOS>5225.727</YPOS>
+			<TYPE>REGULAR</TYPE>
+			<HEURISTICVALUE>2.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>Node 4</NAME>
+			<INDEX>4</INDEX>
+			<XPOS>7822.459</XPOS>
+			<YPOS>5145.5513</YPOS>
+			<TYPE>REGULAR</TYPE>
+			<HEURISTICVALUE>6.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>Node 5</NAME>
+			<INDEX>5</INDEX>
+			<XPOS>7951.5415</XPOS>
+			<YPOS>5289.0654</YPOS>
+			<TYPE>GOAL</TYPE>
+			<HEURISTICVALUE>0.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Edge Definitions -->
+
+		<EDGE>
+			<STARTINDEX>0</STARTINDEX>
+			<ENDINDEX>1</ENDINDEX>
+			<COST>2.0</COST>
+		</EDGE>
+		<EDGE>
+			<STARTINDEX>1</STARTINDEX>
+			<ENDINDEX>2</ENDINDEX>
+			<COST>2.0</COST>
+		</EDGE>
+		<EDGE>
+			<STARTINDEX>2</STARTINDEX>
+			<ENDINDEX>3</ENDINDEX>
+			<COST>2.0</COST>
+		</EDGE>
+		<EDGE>
+			<STARTINDEX>0</STARTINDEX>
+			<ENDINDEX>4</ENDINDEX>
+			<COST>5.0</COST>
+		</EDGE>
+		<EDGE>
+			<STARTINDEX>4</STARTINDEX>
+			<ENDINDEX>5</ENDINDEX>
+			<COST>5.0</COST>
+		</EDGE>
+
+		<!-- Heuristic Settings -->
+
+		<HEURISTIC value="MANUAL"></HEURISTIC>
+		<EDGECOSTS value="MANUAL"></EDGECOSTS>
+
+	</GRAPH>
+</SEARCH>
