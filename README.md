@@ -9,3 +9,8 @@ Basics of Prolog
 ## Assignment 2
 
 Talking Box: Patient with a sympathetic doctor
+
+## Assignment 3
+
+Problem Solving Lab Exercise
+Searching and CSP
