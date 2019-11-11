@@ -5,6 +5,7 @@
 - Navigate to root directory of the projrct.
 - To start the CLI version, run `swipl CLI.pl` or `['CLI.pl']` in Prolog.
 - To start the GUI version, run `swipl server.pl` or `['server.pl']` in Prolog. Then, access http://localhost:5000 from any browser.
+
 ![image](report_img/ScreenShot1.png)
 ## Demo query in CLI
 
